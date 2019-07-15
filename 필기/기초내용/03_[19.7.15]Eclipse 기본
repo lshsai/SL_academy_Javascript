@@ -1,0 +1,28 @@
+ open perspective : java 환경 세팅 (default = JaveEE)
+ 
+ Window --> show view
+ 
+File -> New -> project
+ Class 생성 시, public static void 클릭
+ 
+ Ctrl + f11 -> run
+ 
+ 
+ /*
+ [Eclipse 단축키]
+ Ctrl + [+, -] : 글자크기 조절 / 주석 묶기(numpad)
+ Ctrl + M : 화면 넓게 쓰기
+ Ctrl + Z : 되돌리기
+ Ctrl + Y : 되돌리기 취소
+ Ctrl + Shift + F : 자동 정렬 
+ 블록지정 후 Ctrl + i : indent 맞춤
+ Tab : indent
+ Shift + Tab : 역탭
+ Alt + 방향키 : 줄 옮기기 
+ Ctrl + f11 : program build (comepile + run)
+ */
+ 
+ ctrl + shift + o ; 이클립스 자동 import 단축키
+ 		ChangeCaseQuiz quiz = new ChangeCaseQuiz();
+		// ctrl + shift + o ; 이클립스 자동 import 단축키
+		quiz.main(null);

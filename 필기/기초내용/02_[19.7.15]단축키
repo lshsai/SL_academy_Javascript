@@ -1,0 +1,17 @@
+ Instructor ip : 192.168.0.219
+ 
+ win + e --> open new finder
+			Cmd
+				ipconfig  : ip info
+				netstat -na : port info
+				arp -a  : mac info
+				nslookup : DNS info
+				java -version
+			controll --> 제어판
+			calc -> calculator
+
+win + 방향키 -> 화면 분할			
+			
+ctrl + w : close tab
+ctrl + shift + w : close all tab
+
