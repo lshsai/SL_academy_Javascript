@@ -1,6 +1,6 @@
 package answer;
 
-public class buketquiz {
+public class BuketQuiz {
 
 	public static void main(String[] args) {
 		/* »ç°ú 123°³

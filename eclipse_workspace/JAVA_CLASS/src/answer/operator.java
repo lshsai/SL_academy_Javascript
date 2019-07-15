@@ -1,6 +1,6 @@
 package answer;
 
-public class operator {
+public class Operator {
 
 	public static void main(String[] args) {
 		// int a ¼±¾ð
