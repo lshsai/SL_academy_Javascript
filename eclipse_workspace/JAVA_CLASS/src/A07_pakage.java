@@ -23,8 +23,7 @@ public class A07_pakage {
 		ChangeCaseQuiz quiz = new ChangeCaseQuiz();
 		// ctrl + shift + o ; 이클립스 자동 import 단축키
 		quiz.main(null);
-		
-		
+				
 		//import를 생략하는 방법
 		answer.Condition con = new answer.Condition();
 		con.main(null);
