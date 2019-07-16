@@ -1,0 +1,51 @@
+<html> <!-- html의 주석 -->
+	<head>
+		<style>
+		a{
+			font-size :30px;
+		}
+			
+		a:visited {
+			color : green;
+		}
+		
+		a:hover{
+			color : blue;
+		}
+		a:active {
+			color : red;
+		}
+		a:link{
+			color :pink;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<h1> A tag - HTML Link </h1>
+		<p>
+			a tag를 통해 다른 문서(Document, page)로 이동할 수 있다. <br>
+			a tag에 마우스를 올리면, 마우스 화살표가 손모양으로 바뀐다. <br>
+		</P>
+		
+		<h3>HTML Link</h3>
+		<a href='http:google.com'> 구글로</a>
+		
+		<h3>Local Link</h3>
+		<a href='HTML의 Attribute.html'> html attribute</a>
+		
+		<h3>Unvisited Site</h3>
+		<a href='http://daum.net'> 다음으로</a>
+		
+		<h3>Testing Target Attribute</h3>
+		<a href='http://google.com' target='_blank'> _blank</a> <br> <!-- 새 탭으로 열기 -->
+		<a href='http://google.com' target='_self'> _self</a> <br> <!-- 현재 창에서 열기 -->
+		<a href='http://google.com' target='_parent'> _parent</a> <br>
+		<a href='http://google.com' target='_top'> _top</a> <br>
+		
+		<h3>Image as Link</h3>
+		<a href='http://google.com' target='_blank' title ='Go to Google'>
+			<img src='img/pic_trulli.jpg' width='100'>
+		</a>
+	</body>
+	

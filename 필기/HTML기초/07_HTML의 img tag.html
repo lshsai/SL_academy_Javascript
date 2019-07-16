@@ -1,0 +1,40 @@
+<html> <!-- html의 주석 -->
+	<head>
+		<style>
+		img {
+			width: 300px;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<h3>img tag의 속성 width 사용 : 스타일시트가 우선순위로 적용(안 바뀜)</h3>
+		<img src='img/pic_trulli.jpg' alt='View of Trulli' width='100'>
+
+		<h3>style의 속성 width 사용 : 스타일 속성으로 덮어야 함</h3>
+		<img src='img/pic_trulli.jpg' alt='View of Trulli' style='width:400px;'>
+		<p>
+		스타일시트가 크기 변경하는 것을 막고자 한다면, 스타일 속성 이용하자
+		</p>
+		
+		<h3>웹 사이트 그림 가져와서 사용하기</h3>
+		<img src='https://r-ak.bstatic.com/images/hotel/max1024x768/188/188712134.jpg'>
+		
+		<h3>이미지 맵</h3>
+		<img src='img/workplace.jpg' style='width:400px;' usemap='#workmap'>
+			<map name = 'workmap'>
+				<area shape='rect' coords='30,40,280,190' title='Raptop' href ='http://shop.danawa.com/pcshop/?controller=brandPC&methods=priceListCategory&categorySeq=3'>
+				<area shape='rect' coords='280,170,340,250' title='SmartPhone' href ='http://prod.danawa.com/info/?pcode=8109571&cate=12215709'>
+			</map>
+			
+			
+		<h3>반응형 이미지</h3>
+		<picture>
+			<source media='(min-width:650px)' srcset='img/china_food/jajang.png'>
+			<source media='(min-width:550px)' srcset='img/china_food/woodong.png'>
+			<source media='(min-width:450px)' srcset='img/china_food/jambong.png'>
+			<img src='img/china_food/main.png' style='width:auto;'> <!-- 예전 브라우저에서 사용될 이미지 -->
+		
+		</picture>
+	</body>
+	
