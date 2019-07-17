@@ -1,0 +1,208 @@
+<html> <!-- html의 주석 -->
+	<head>
+		<style>
+			table, th, td {
+				border : 1px black solid;
+				/* border-collapse : seperate;  디폴트 */
+				border-collapse : collapse;
+			}
+			table{
+				width : 500px;
+				text-align : center;
+			}
+			<!-- tag call은 그냥 부른다 -->
+			th, td {
+				padding : 5px;
+			}
+			<!-- id call은 #을 붙힌다. -->
+			<!-- 선택적 call이 가능(selecter 문법 : html DOM) -->
+			
+			table#t02 {
+				width : 100%;
+			}
+			
+			table#t02 tr:nth-child(1){
+				background-color : black;
+				color : white;
+			}
+			
+			table#t02 tr:nth-child(2){
+				background-color : gray;
+				color : white;
+			}
+			
+			table#t02 tr:nth-child(even){
+				background-color : gray;
+				color : white;
+			}
+			
+			table#t02 tr:nth-child(odd){
+				background-color : green;
+				color : white;
+			}
+			
+			#t01 {
+				width : 100%;
+				border : 5px solid green;
+				background-color : tomato;
+				color : white;
+			}
+			
+			#t01 th, #t01 td {
+				border : 5px solid green;
+			}
+			
+		</style>
+	</head> 
+	<body>
+		<!-- 
+			Table : 테이블
+			tr    : 한 줄을 의미(행)
+			td    : 한 칸을 의미(열)
+			th    : td와 같은 역할, 제목칸을 의미
+		-->
+		<table>
+			<tr>
+				<th>성</th> <!-- 굵게, 가운데 정렬 (디폴트) -->
+				<th>이름</th>
+				<th>나이</th>
+				<th colspan='2'>연락처</th> <!-- 2칸 짜리 -->
+			</tr>
+			<tr>
+				<td>권</td>
+				<td>혁준</td>
+				<td>35</td>
+				<td>02-123-1234</td>
+				<td>010-1234-1234</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>33</td>
+				<td>02-123-1234</td>
+				<td>010-1234-1234</td>
+			</tr>
+			<tr>
+				<td>Samuel</td>
+				<td>Jackson</td>
+				<td>45</td>
+				<td>02-123-1234</td>
+				<td>010-1234-1234</td>
+			</tr>
+		</table>
+		
+		<hr>
+		
+		<table>
+			<tr>
+				<th>이름</th>
+				<td>빌게이츠</td>
+			</tr>
+			<tr>
+				<th rowspan='2'>전화번호</th>
+				<td>1588-1588</td>
+			</tr>
+			<tr>
+				<td>114</td>
+			</tr>
+		</table>
+		
+		<hr>
+
+		<table id = 't02'>
+			<tr>
+				<th>이름</th>
+				<td colspan='3'>빌게이츠</td>
+				
+			</tr>
+			<tr>
+				<th rowspan='4'>전화번호</th>
+				<td colspan='3'>1588-1588</td>
+
+			</tr>
+			<tr>
+				<td>114</td>
+				<td>114</td>
+				<td>114</td>
+			</tr>
+			<tr>
+				<td>114</td>
+				<td>114</td>
+				<td>114</td>
+
+			</tr>
+			<tr>
+				<td>114</td>
+				<td>114</td>
+				<td>114</td>
+			</tr>
+		</table>
+		
+		<hr>
+		
+		<table>
+			<caption> 회원정보</caption>
+			<tr>
+				<th>성</th> <!-- 굵게, 가운데 정렬 (디폴트) -->
+				<th>이름</th>
+				<th>나이</th>
+				<th colspan='2'>연락처</th> <!-- 2칸 짜리 -->
+			</tr>
+			<tr>
+				<td>권</td>
+				<td>혁준</td>
+				<td>35</td>
+				<td>02-123-1234</td>
+				<td>010-1234-1234</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>33</td>
+				<td>02-123-1234</td>
+				<td>010-1234-1234</td>
+			</tr>
+			<tr>
+				<td>Samuel</td>
+				<td>Jackson</td>
+				<td>45</td>
+				<td>02-123-1234</td>
+				<td>010-1234-1234</td>
+			</tr>
+		</table>
+		
+		<hr>
+		
+		<table id='t01'> <!-- id도 style과 마찬가지로 global attribute이다 -->
+			<caption> 회원정보</caption>
+			<tr>
+				<th>성</th> 
+				<th>이름</th>
+				<th>나이</th>
+				<th colspan='2'>연락처</th> <!-- 2칸 짜리 -->
+			</tr>
+			<tr>
+				<td>권</td>
+				<td>혁준</td>
+				<td>35</td>
+				<td>02-123-1234</td>
+				<td>010-1234-1234</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>33</td>
+				<td>02-123-1234</td>
+				<td>010-1234-1234</td>
+			</tr>
+			<tr>
+				<td>Samuel</td>
+				<td>Jackson</td>
+				<td>45</td>
+				<td>02-123-1234</td>
+				<td>010-1234-1234</td>
+			</tr>
+		</table>
+	</body>
+</html>
+	
