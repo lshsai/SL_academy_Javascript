@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>Class 속성</title>
+		<style>
+			.city {
+			background-color: black;
+			color: white;
+			}
+			
+			.food {
+			background-color: gray;
+			color: white;
+			}
+			
+			.food h2{
+			font-size: 40;
+			}
+			
+			#city{
+			font-size: 40;
+			}
+		</style>		
+	</head>
+	<body>
+		<div></div>
+		class 속성은 id와 비슷한 용도로 사용한다. <br>
+		id는 유일한 식별자(중복 권장하지 않음)<br>
+		class는 분류용 (중복 사용) <br>
+		class는 여러개를 사용할 수 있음<br>
+		class도 gobal atrribute 이다(style, id, class)<br>
+		
+		<button onclick="hide()"> 도시 숨기기</button>
+		
+		<a href ='#bn'>ds</a>
+		<div class ='city london'>
+			<h2>런던</h2>
+			<p>런던 여행 결과</p>
+		</div>
+		<div class ='food'>
+			<h2>런던의 음식등</h2>
+			<p>맛이 있어요.</p>
+		</div>
+		<div class ='city'>
+			<h2>도쿄</h2>
+			<p>도쿄 방사능</p>
+		</div>
+		<div class ='food'>
+			<h2>도쿄의 음식등</h2>
+			<p>맛이 없어요.</p>
+		</div>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<p id ='bn'>도쿄 방사능</p>
+
+		<script>
+		function hide() {
+			var cities = document.getElementsByClassName("city");
+			console.dir(cities);
+			for (i =0; i< cities.length; i++) {
+				cities[i].style.display = "none";
+			}
+		}
+		</script>	
+	
+	</body>
+	
+</html>

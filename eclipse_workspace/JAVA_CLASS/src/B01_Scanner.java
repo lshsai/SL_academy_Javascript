@@ -28,6 +28,7 @@ public class B01_Scanner {
 		System.out.println("필요한 바구니 개수는 " + numOfBucket + "개 입니다.");
 
 		sc.nextLine();
+		// int를 받았는데, 뒤에 str을 받으려면 sc.nextLine();로 버퍼를 줘야 함. 
 		
 		System.out.print("문자열을 입력하세요 >> ");
 		String str = sc.nextLine();
