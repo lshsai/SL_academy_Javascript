@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<style>
+	body{
+		background: url('img/img_girl.jpg') no-repeat fixed center;
+	}
+	
+	div{
+		background-image:url('img/workplace.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-attachment : fixed;
+		background-size: auto;
+		
+		color :white;
+		
+		width : 100%;
+		height : 70%;
+		
+		a
+	}
+	
+	
+	p{
+		font-size:25px;
+	}
+		</style>
+	</head>
+	<body>
+		
+		<h1>Background-repeat의 옵션</h1>
+		<p>
+			repeat : default <br>
+			repeat-x, y : 가로, 세로 반복<br>
+			no-repeat : 반복 x <br>
+			space : 반복 할 수 있는 공간만큼 <br>
+			round : 공간만큼(간격 없이) 반복)
+		</p>
+		
+		<h1>Background-position의 옵션</h1>
+		<p>
+			left, right, top, bottom, center 조합가능
+		</p>
+		
+		<h1>Background-attachment의 옵션</h1>
+		<p>
+			fixed : 스크롤 이동해도 고정
+			scroll : 기본 값
+		</p>
+		<div></div>
+		
+		<h1>Initial</h1>
+		<p>
+			대부분의 property에 들어갈 수 있는 value <br>
+			설정을 초기상태로 만들어 줌 <br>
+			background-repeat : initial; (<- 기본으로 돌리기)
+		</p>
+		
+		<h1>background-size 옵션들</h1>
+		<p>
+			auto : 원본 그림 크기 <br>
+			cover : 컨테이너 크기로 조정<br>
+			contain: 이미지가 모두 보이게 조정 <br>
+			숫자px ; 고정 크기<br>
+			숫자% ; 컨테이너에서 차지하는 비율<br>
+			컨테이너? 해당 tag(Element)의 크기	<br>
+			background-size: Apx(%) Ypx(%)	<br>
+		</p>
+		
+		
+
+	</body>
+</html>

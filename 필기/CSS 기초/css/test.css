@@ -1,0 +1,7 @@
+/* 문서 전체가 style tag의 내부가 된다 */
+/* 3번째 방법 : link tag */
+
+body{
+	background-color: green;
+	color : red;
+}
