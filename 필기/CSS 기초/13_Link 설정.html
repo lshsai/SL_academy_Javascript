@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title> Link 설정 </title>
+		<style>
+		a {
+			color : pink;
+			text-decoration: none;
+		}
+		a:link {
+			color : green;
+			background-color: yellow;
+		}
+		a:visited {
+			color: hotpink;
+			background-color: aqua;
+		}
+		a:hover{
+			color : red;
+			text-decoration: underline;
+			background-color: black;
+		}
+		a:active{
+			color : blue;
+
+		}
+		
+		.button:link, .button:visited {
+			background-color: #637d6a;
+			color: white;
+			text-align: center;
+			text-decoration: none;
+			
+			padding: 10px 20px;
+			margin-top: 10px;
+			display: inline-block;
+		}
+		
+		.button:hover, .button:active{
+			background-color: #9ad6aa;
+		}
+		
+		/* link, visited, hover, active 순서로 하는게 버그가 없음*/
+		
+		</style>
+	</head>
+	<body>
+		<b><a href = "http://naver.com" target="blank"> 이것은 링크입니다.</a></b><br>
+		<b><a href = "http://naver123.com" target="blank"> 이것은 링크입니다.</a></b><br>
+		<b><a href = "http://google.com" 
+			target="blank" 
+			class='button'> 
+			이것은 링크입니다.
+			</a></b>
+	</body>
+</html>

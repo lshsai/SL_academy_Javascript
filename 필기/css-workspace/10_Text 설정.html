@@ -1,0 +1,177 @@
+<html>
+	<head>
+		<title>CSS Text</title>
+		<style>
+		body {
+			font-family: Courier;
+		}
+		div {
+			border: 1px solid gray;
+			padding: 8px;
+			margin-bottom: 10px;
+		}
+		h1 {
+			font-size: 40px;
+			text-align: center;
+			color: #4fb84f;
+		}		
+		h2 {
+			font-size: 30px;
+		}
+		p, span {
+			font-size: 20px;
+		}
+		span {
+			margin: 8px;
+		}
+		
+		.left {
+			text-align: left;
+		}
+		.center {
+			text-align: center;
+		}
+		.right {
+			text-align: right;
+		}
+		
+		.overline {
+			text-decoration: overline;
+		}
+		.line-through {
+			text-decoration: line-through;
+			text-decoration-color: red;
+			text-decoration-style: wavy;
+		}
+		.underline {
+			text-decoration: underline overline line-through;
+		}
+		a {
+			text-decoration: none;
+			color: #519e51;
+		}
+		
+		p.uppercase {
+			text-transform: uppercase;
+		}
+		p.lowercase {
+			text-transform: lowercase;
+		}
+		p.capitalize {
+			text-transform: capitalize;
+		}		
+		</style>
+	</head>
+	<body>
+		<h1>TEXT FORMATTING</h1>
+		
+		<div>
+			<h2>text-align</h2>
+			<hr>
+			<p class='left'>left</p>
+			<p class='center'>center</p>
+			<p class='right'>right</p>
+		</div>		
+		<div style='font-weight: bold; background-color: navy;'>
+			<h2 style='color: white'>text-color</h2>
+			<hr>
+			<span style='color: violet;'>Violet</span>
+			<span style='color: indigo;'>Indigo</span>
+			<span style='color: khaki;'>Khaki</span>
+			<span style='color: orange;'>Orange</span>
+			<span style='color: palegreen;'>Palegreen</span>
+			<span style='color: slateblue;'>SlateBlue</span>
+			<span style='color: teal;'>Teal</span>
+			<span style='color: lime;'>Lime</span>
+			<span style='color: tomato;'>Tomato</span>
+		</div>
+		<div>
+			<h2>text-decoration</h2>
+			<hr>
+			<p class='overline'>overline</p>
+			<p class='line-through'>line-through</p>
+			<p class='underline'>underline</p>
+			<p>
+				<a href='http://naver.com'>"네이버"</a>를 
+				누르면 네이버로 이동합니다. 
+			</p>
+		</div>	
+		<div>
+			<h2>text-align: justify</h2>
+			<hr>
+			<div style='width: 200px;
+						height: 200px;
+						text-align: justify;'>
+				오늘(23일) 서울 동작구 구 노량진수산시장에 대한 법원의 8차 명도집행이 시작됐습니다.
+				경찰에 따르면 오늘 아침 6시 반쯤 법원 집행인력 60여명과 수협 측 직원 70명은 구 노량진수산시장 판매장에 남아 있는 점포들을 
+			</div>
+		</div>			
+		<div>
+			<h2>text-transform</h2>
+			<hr>
+			<p class='uppercase'>uppercase</p> <!-- 대문자로 -->
+			<p class='lowercase'>LOWERCASE</p> <!-- 소문자로 -->
+			<p class='capitalize'>capitalize</p> <!-- 첫글자만 대문자로 -->
+		</div>	
+		<div>
+			<h2>text-indent</h2>
+			<hr>
+			<p style='text-indent: 20px;'> <!-- 첫 글자 들여쓰기 -->
+				오늘(23일) 서울 동작구 구 노량진수산시장에 대한 법원의 8차 명도집행이 시작됐습니다.
+				경찰에 따르면 오늘 아침 6시 반쯤 법원 집행인력 60여명과 수협 측 직원 70명은 구 노량진수산시장 판매장에 남아 있는 점포들을 
+			</p>
+		</div>
+		<div>
+			<h2 style='letter-spacing: 3px;'>letter-spacing</h2>
+			<hr>
+			<p style='letter-spacing: -3px;'>letter-spacing</p>
+			<p style='letter-spacing: 10px;'>letter-spacing</p>
+		</div>
+		<div>
+			<h2 style='letter-spacing: 3px;'>line-height</h2>
+			<hr>
+			<p style='line-height: 0.7;'>
+				0.7 line-height <br>
+				0.7 line-height <br>
+				0.7 line-height
+			</p>
+			<p style='line-height: 1.8;'>
+				1.8 line-height <br>
+				1.8 line-height <br>
+				1.8 line-height 				
+			</p>
+		</div>
+		<div>
+			<h2 style='letter-spacing: 3px;'>direction</h2>
+			<hr>
+			<p style='direction: rtl;'>
+				<bdo>안녕하세요 반갑습니다.</bdo>
+			</p>
+			<p style='direction: ltr;'>
+				안녕하세요 반갑습니다.
+			</p>
+		</div>
+		<div>
+			<h2>word-spacing</h2> <!-- 단어 간격 조절 -->
+			<hr>
+			<p style='word-spacing: 10px;'>
+				This p tag have 10px word-spacing;
+			</p>
+			<p style='word-spacing: 0px;'>
+				This p tag have 0px word-spacing;
+			</p>
+			<p style='word-spacing: -10px;'>
+				This p tag have -10px word-spacing;
+			</p>
+		</div>		
+		<div>
+			<!-- text-shadow: [그림자 좌우거리] [그림자 상하거리] [Color] -->
+			<h2 style='text-shadow: 3px 2px gray'>text-shadow</h2> 
+		</div>
+	</body>
+</html>
+
+
+
+
+

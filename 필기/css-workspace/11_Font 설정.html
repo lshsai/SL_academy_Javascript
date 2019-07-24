@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<title>Font 설정</title>
+		<style>
+		div {
+			font-size: 20px;
+		}
+		div.serif {
+			font-family: Georgia;
+		}
+		div.sansserif {
+			font-family: Verdana;
+		}		
+		div.monospace {
+			font-family: courier;
+		}
+		div.outline {
+			border: 5px solid orange;
+			padding: 8px;
+			margin-bottom: 10px;
+		}
+		div.outline h2 {
+			font-size: 30px;
+			font-family: console;
+			color: #6b613e;
+		}
+		</style>
+	</head>
+	<body>
+		<div class='outline'>
+			<h2>Serif, Sans-serif, Monospace</h2>
+			<hr style='border-color: orange;'>
+			<p>
+				<div class='serif'>Serif 계열 폰트 : 끝부분이 멋지게 되어있음</div>
+				<div class='sansserif'>Sans-serif : 끝부분이 멋진 부분이 없음</div>
+				<div class='monospace'>Monospace : 모든 글자의 너비가 같음</div>
+			</p>
+		</div>
+		<div class='outline'>
+			<h2>font-style</h2>
+			<hr style='border-color: orange;'>
+			<p style='font-style: normal;'>Normal</p>
+			<p style='font-style: italic;'>Italic</p>
+			<p style='font-style: oblique;'>Oblique</p>
+		</div>
+		<div class='outline'>
+			<h2>font-size</h2>
+			<hr style='border-color: orange;'>
+			<h4>pixel로 설정</h4>
+			<p style='font-size: 40px;'>40px</p>
+			<p style='font-size: 30px;'>30px</p>
+			<p style='font-size: 20px;'>20px</p>
+			<p style='font-size: 10px;'>10px</p>
+			<hr style='border-color: orange;'>
+			<h4>em으로 설정</h4>			
+			<p style='font-size: 2.5em;'>2.5em</p>
+			<p style='font-size: 1.7em;'>1.7em</p>
+			<p style='font-size: 1.0em;'>1.0em (default : 16px)</p>
+			<p style='font-size: 0.8em;'>0.8em</p>
+			<hr style='border-color: orange;'>
+			<h4>font-size를 모든 브라우저에서 일괄적으로 맞추기</h4>
+			<ol>
+				<li>body의 font-size를 100%로 설정</li>
+				<li>Element들의 font-size는 em으로 설정</li>
+				<li>모든 웹 브라우저에서 같은 크기가 된다</li>
+				<li>zoom과 resize도 자연스러워진다</li>
+			</ol>
+		</div>
+		<div class='outline'>
+			<h2>font-weight</h2>
+			<hr style='border-color: orange;'>
+			<p style='font-weight: normal;'>font-weight: normal</p>
+			<p style='font-weight: bold;'>font-weight: bold</p>
+			<p style='font-weight: bolder;'>font-weight: bolder</p>
+			<p style='font-weight: lighter;'>font-weight: lighter</p>
+			<p style='font-weight: 100;'>font-weight: 100</p>
+			<p style='font-weight: 900;'>font-weight: 900</p>
+		</div>
+		<div class='outline'>
+			<!-- vw: view width -->
+			<h2 style='font-size: 10vw;'>Responsive Font Size</h2>
+			<hr style='border-color: orange;'>
+			<p style='font-size: 5vw;'>
+				브라우저의 크기를 변경하면 글자크기가 어떻게 될까
+			</p>
+			Viewport는 브라우저의 크기를 말한다. <br>
+			1vw : Viewport의 1%를 말한다. <br>
+			ex) Viewport가 50cm일 때, 1vw는 0.5cm
+		</div>	
+		<div class='outline'>		
+			<h2>font-variant</h2>
+			<hr style='border-color: orange;'>
+			<p style='font-variant: normal;'>font-variant: normal</p>
+			<p style='font-variant: small-caps;'>Font-Variant: Small-Caps</p>
+		</div>			
+	</body>
+</html>
+
+
+
+

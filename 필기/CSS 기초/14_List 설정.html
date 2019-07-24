@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title> List 설정 </title>
+		<style>
+		body{
+			font-size: 1.0em;
+		}
+		
+		ul.a {
+			list-style-type: square;
+		}
+		
+		ul.b {
+			list-style-type: circle;
+		}
+		
+		ol.c {
+			list-style-position:inside;
+			background-color: red;
+		}
+		ol.c li {
+			border: 1px solid black;
+			margin: 3px;
+			background-color: orange;
+		}
+		
+		ol.d {
+			list-style-position:outside;
+			background-color: red;
+		}
+		
+		ol.d li {
+			border: 1px solid black;
+			margin: 3px;
+			background-color: orange;
+			background-image: url('img/check.png');
+			
+			background-size: contain;
+			background-position: left;
+			background-repeat: no-repeat;
+			padding-left: 25px;
+			
+		}
+		
+		</style>
+	</head>
+	<body>
+		<h3> UL 예제</h3>
+		<!-- unordered list -->
+		<ul class='a'>
+			<li> 콜라 </li>
+			<li> 사이다 </li>
+			<li> 환타 </li>
+		</ul>
+		<ul class='b'>
+			<li> 콜라 </li>
+			<li> 사이다 </li>
+			<li> 환타 </li>
+		</ul>
+		<h3> OL 예제</h3>
+		<!-- ordered list -->
+		<ol class='c' type='i'>
+			<li> HTML </li>
+			<li> CSS </li>
+			<li> Bootstrap </li>
+		</ol>
+		<ol class='d' type='a'>
+			<li> HTML </li>
+			<li> CSS </li>
+			<li> Bootstrap </li>
+		</ol>
+	</body>
+</html>

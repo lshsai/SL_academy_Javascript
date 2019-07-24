@@ -1,0 +1,76 @@
+<html>
+	<head>		
+		<style>
+		
+		body {
+			background: no-repeat left top 100% fixed url('img/img_girl.jpg');		
+		}
+		
+		div {
+			/*background-color: lightblue;*/
+			background-image: url('img/workplace.jpg');			
+			background-repeat: no-repeat;
+			background-position: center;
+			background-attachment: fixed;
+			background-size: cover; 			
+			
+			width: 100%;
+			height: 70%;
+		}
+		
+		p {
+			font-size: 25px;
+		}
+		
+		</style>
+	</head>
+	<body>
+		
+		<h1>background-repeat의 옵션들</h1>
+		<p>
+			repeat : 그냥 반복 (default) <br>
+			repeat-x : 가로로 반복 <br>
+			repeat-y : 세로로 반복 <br>
+			no-repeat : 반복 X <br>
+			space : 반복 할 수 있는 공간만큼 <br>
+			round : 공간만큼 (간격없이) 반복 <br>
+		</p>
+		
+		<h1>background-position 옵션들</h1>
+		<p>
+			left, right, top, bottom, center (조합 가능)
+		</p>
+		<div></div>
+		<h1>background-attachment 옵션들</h1>
+		<p>
+			fixed : 스크롤을 이동해도 그림위치가 고정됨 <br>
+			scroll : 스크롤됨 (default)
+		</p>
+		
+		<h1>Initial</h1>
+		<p>
+			대부분의 property에 들어갈 수 있는 value <br>
+			설정을 초기 상태로 만들어준다 <br>
+			예) background-attachement의 initial은 scroll이다
+		</p>
+		
+		<h1>background-size 옵션들</h1>
+		<p>
+			auto : 원본 그림 사이즈 <br>
+			cover : 이미지 크기를 컨테이너 전체를 뒤덮는 크기로 수정해준다 <br>
+			contain : 이미지 크기를 이미지를 모두 볼 수 있게 수정해준다 <br>
+			숫자px : 고정크기 
+			숫자% : 컨테이너에서 차지하는 비율 
+			컨테이너란? background가 속해있는 태그(Element)를 의미한다
+		</p>
+		
+		
+	</body>
+</html>
+
+
+
+
+
+
+

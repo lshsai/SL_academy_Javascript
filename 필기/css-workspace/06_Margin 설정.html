@@ -1,0 +1,151 @@
+<html>
+	<head>
+		<title>Margin 설정하기</title>
+		<style>
+		body {
+			background-color: bisque;
+		}
+		
+		.test0 {
+			margin: 70px;
+			padding: 10px;
+			border: 1px solid green;
+		}
+		.test1 {
+			border: 10px solid orange;
+		
+			margin-top: 30px;
+			margin-right: 150px;
+			margin-bottom: 100px;			
+			margin-left: 80px;
+		
+			background-color: blue;
+			color: white;
+		}
+		.test2 {
+			width: 200px;
+			height: 200px;
+			border: 10px solid lime;
+			
+			margin: 30px 150px 100px 80px;
+			
+			background-color: green;
+			color: white;
+		}
+		
+		.parentDiv {
+			border: 1px solid red;
+			margin-left: 100px;
+		}
+		.inheritTest {
+			margin-left: inherit;
+		}
+		
+		#testHead1 {
+			margin: 0 0 50px 0; 
+			/* margin-bottom: 50px; */
+		}
+		#testHead2 {
+			margin: 20px 0 0 0; 
+			/* margin-top: 20px; */
+		}
+		
+		</style>
+	</head>
+	<body>
+		<div class='test0'>이것은 div엘리먼트 입니다</div>
+		
+		<h2>각각의 면에 margin값 주기</h2>
+		
+		<p class='test1'>
+			이것은 p태그 입니다
+			이것은 p태그 입니다
+			이것은 p태그 입니다
+			이것은 p태그 입니다
+			이것은 p태그 입니다
+			이것은 p태그 입니다
+			이것은 p태그 입니다
+			이것은 p태그 입니다
+			이것은 p태그 입니다
+			이것은 p태그 입니다
+			이것은 p태그 입니다
+			이것은 p태그 입니다
+			이것은 p태그 입니다
+			이것은 p태그 입니다
+			이것은 p태그 입니다
+			이것은 p태그 입니다
+		</p>
+		
+		<h2>한번에 margin주기</h2>
+		
+		<p class='test2'>		
+			margin: 30px 150px 100px 80px;
+		</p>
+		
+		<!-- margin값 3개 줄 때 : 위 왼/오 아래-->
+		<p class='test2' style='margin: 25px 50px 75px;'>	
+			margin: 25px 50px 75px
+		</p>
+		
+		<!-- margin값 2개 줄 때 : 위/아래 왼/오 -->
+		<p class='test2' style='margin: 25px 50px;'>		
+			margin: 25px 50px;		
+		</p>
+		
+		<!-- margin값 1개 줄 때 : 모든방향 마진 일괄 설정 -->
+		<p class='test2' style='margin: 50px;'>		
+			margin: 50px;
+		</p>
+		
+		<h2>margin: auto를 사용하면 어떻게 될까?</h2>		
+		<p>
+			margin: auto를 이용해 Element를 화면 중앙으로
+			자동 조정 할 수 있다
+		</p>		
+		<div style='width:300px;
+					margin: auto;
+					border: 1px solid red;'>
+					이 div의 margin은 auto입니다.</div>
+					
+		<h2>margin: inherit; 옵션</h2>
+		<p class='inheritTest'>
+			Margin을 inherit으로 설정한 p태그입니다. <br>
+			이 태그의 부모는 body입니다.
+		</p>
+		
+		<div class='parentDiv'>
+			<p class='inheritTest'>
+				Margin을 inherit으로 설정한 p태그입니다.
+				이 태그의 부모는 parentDiv입니다.
+			</p>
+		</div>
+		
+		<h2>Margin 충돌 버그</h2>
+		
+		<h1 id='testHead1'>Heading1</h1>
+		<h2 id='testHead2'>Heading2</h2>
+		
+		<p> 
+			margin-bottom에 50px을 주고 <br>
+			margin-top에 20px을 줬지만 간격은 70px이 아니었다 <br>
+			이처럼 margin-bottom과 margin-top을
+			같이쓰면 버그가 존재한다 <br>
+			때문에, margin-top이나 margin-bottom 중 
+			하나만 사용해서 간격을 조정하는것이 좋다 <br>
+			이 현상은 top/bottom에만 적용된다. (left/right는 이런 버그가 없다)
+		</p>
+		
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+	
+	</body>
+</html>
+
+
+
+
+
+
+
+

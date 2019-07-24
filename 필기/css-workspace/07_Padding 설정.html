@@ -1,0 +1,119 @@
+<html>
+	<head>
+		<title>padding 설정하기</title>
+		<style>
+		body {
+			background-color: #243b3b;
+			color: white;			
+			font-family: D2coding;
+			border-color: white;
+			border-style: dashed;
+			padding: 8px;
+		}
+		h4 {
+			margin: 0px;
+		}
+		div {
+			margin-bottom: 25px;
+		}
+		
+		.div1 {
+			border: 1px solid #87e0e0;		
+			padding-top: 50px;
+			padding-right: 10px;
+			padding-bottom: 30px;
+			padding-left: 100px;	
+				
+			margin-bottom: 50px;
+		}
+		.div2 {
+			width: 300px;
+			border: 1px solid #f0f571;
+		}
+		.div3 {
+			width: 300px;
+			padding: 25px;
+			border: 1px solid #ff8875;
+		}
+		</style>
+	</head>
+	<body>
+		<h2>각각의 면에 padding값 주기</h2>
+		<div class='div1'>
+			padding 테스트용 div입니다. padding 테스트용 div입니다.
+			padding 테스트용 div입니다. padding 테스트용 div입니다.
+			padding 테스트용 div입니다. padding 테스트용 div입니다.
+			padding 테스트용 div입니다. padding 테스트용 div입니다.
+		</div>
+		<h2>한번에 padding값 주기</h2>
+		<!-- 4개 한번에 줄 때 : 시계방향 (위 오른쪽 아래 왼쪽) -->
+		<h4>4개 주기</h4>
+		<div class='div1' style='padding: 30px 10px 100px 200px'>
+			padding: 30px 10px 100px 200px;
+			padding 테스트용 div입니다. padding 테스트용 div입니다.
+			padding 테스트용 div입니다. padding 테스트용 div입니다.
+			padding 테스트용 div입니다. padding 테스트용 div입니다.
+			padding 테스트용 div입니다. padding 테스트용 div입니다.
+		</div>
+		<!-- 3개 줄 때 : 위 왼쪽/오른쪽 아래 -->
+		<h4>3개 주기</h4>
+		<div class='div1' style='padding: 30px 100px 10px'>
+			padding: 30px 100px 10px;
+			padding 테스트용 div입니다. padding 테스트용 div입니다.
+			padding 테스트용 div입니다. padding 테스트용 div입니다.
+			padding 테스트용 div입니다. padding 테스트용 div입니다.
+			padding 테스트용 div입니다. padding 테스트용 div입니다.
+		</div>
+		<!-- 2개 줄 때 : 위/아래 왼쪽/오른쪽 -->
+		<h4>2개 주기</h4>
+		<div class='div1' style='padding: 50px 100px;'>
+			padding: 50px 100px;
+			padding 테스트용 div입니다. padding 테스트용 div입니다.
+			padding 테스트용 div입니다. padding 테스트용 div입니다.
+			padding 테스트용 div입니다. padding 테스트용 div입니다.
+			padding 테스트용 div입니다. padding 테스트용 div입니다.
+		</div>
+		<!-- 1개 줄 때 : 모든 면 일괄적용 -->
+		<h4>1개 주기</h4>
+		<div class='div1' style='padding: 150px;'>
+			padding: 50px 100px;
+			padding 테스트용 div입니다. padding 테스트용 div입니다.
+			padding 테스트용 div입니다. padding 테스트용 div입니다.
+			padding 테스트용 div입니다. padding 테스트용 div입니다.
+			padding 테스트용 div입니다. padding 테스트용 div입니다.
+		</div>
+		
+		<h2>Padding과 Element Width간의 상관관계</h2>
+		<div class='div2'>
+			이 div2는 width가 300px입니다.
+		</div>
+		<div class='div3'> 
+			이 div3도 width가 300px입니다. <br>
+			하지만 padding이 25px입니다. <br>
+			실제 너비는 350px입니다.
+		</div>		
+		<p><b>
+			별도의 설정이 없을 때 HTML Element의 실제 너비는 <br> 
+			width + padding * 2가 된다
+		</b></p>
+		<div class='div3' style='box-sizing: border-box;'>
+			이 div도 div3입니다. <br>
+			box-sizing property를 border-box로 설정해
+			padding 크기에 관계없이 width값으로 맞출 수 있습니다.
+		</div>
+		<p><b>
+			box-sizing: content-box (default) <br> 
+			box-sizing: border-box (width값만으로 크기 설정)
+		</b></p>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+

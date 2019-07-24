@@ -1,0 +1,141 @@
+<html>
+	<head>
+		<title>Display property</title>
+		<style>
+		.container, .flex-container{
+			border: green solid;
+			margin-bottom: 10px;
+		}
+		
+		.content {
+			padding: 8px;
+			margin: 8px;
+			border: tomato solid;
+		}
+		#c2 .content{
+		/* inline : 요소가 옆으로 붙음(width, height 없음)*/
+		/* block : 요소가 한 줄을 다 차지(width, height 지닐 수 있음)*/
+		/* display: inline-block : inline처럼 옆으로 붙음, block처럼 width, height 지닐 수 있음*/
+			display: inline;
+		}
+		
+		#c3 .content{
+			display: inline-block;
+		}
+		
+		
+		#c4 .content{
+		/* 자리차지 x, 사라짐*/
+			display: none;
+		}
+		#c5 .content{
+		/* 자리차지, 사라짐*/
+			visibility:hidden;
+		}
+		
+		#c6 {
+		/* 내용 많아지면, 창 크기에 맞추려고 content크기 줄임*/
+		/* inline-block은 다음 줄로 넘김*/
+			display: flex;
+		}
+		
+		.flex-container{
+			display: flex;
+		}
+		.flex-container .content{
+			width: 50px;
+		}
+		#f1{
+		flex-direction:column;
+		}
+		#f2{
+			flex-direction:column-reverse;
+		}
+		#f3{
+			flex-direction:row-reverse;
+		}
+		
+		.flex-wrap {
+			flex-wrap: wrap;
+		}
+		
+		.justify-content{
+			justify-content: center;
+		}
+		
+		
+		</style>
+	</head>
+	<body>
+		<h1>display:block</h1>
+		<div id='c1' class='container'>
+			<div class='content'> 내용1 </div>
+			<div class='content'> 내용2 </div>
+			<div class='content'> 내용3 </div>
+		</div>
+		<h1>display:inline</h1>
+		<div id='c2' class='container'>
+			<div class='content'> 내용1 </div>
+			<div class='content'> 내용2 </div>
+			<div class='content'> 내용3 </div>
+		</div>
+		<h1>display:inline-block</h1>
+		<div id='c3' class='container'>
+			<div class='content'> 내용1 </div>
+			<div class='content'> 내용2 </div>
+			<div class='content'> 내용3 </div>
+			<div class='content'> 내용1 </div>
+			<div class='content'> 내용2 </div>
+			<div class='content'> 내용3 </div>
+			<div class='content'> 내용1 </div>
+			<div class='content'> 내용2 </div>
+			<div class='content'> 내용3 </div>
+			<div class='content'> 내용1 </div>
+			<div class='content'> 내용2 </div>
+			<div class='content'> 내용3 </div>
+		</div>
+		<h1>display:none</h1>
+		<div id='c4' class='container'>
+			<div class='content'> 내용1 </div>
+			<div class='content'> 내용2 </div>
+			<div class='content'> 내용3 </div>
+		</div>
+		<h1>visibility: hidden</h1>
+		<div id='c5' class='container'>
+			<div class='content'> 내용1 </div>
+			<div class='content'> 내용2 </div>
+			<div class='content'> 내용3 </div>
+		</div>
+		<h1>display:flex</h1>
+		<div id='c6' class='container flex-wrap'>
+			<div class='content'> 내용1 </div>
+			<div class='content'> 내용2 </div>
+			<div class='content'> 내용3 </div>
+			<div class='content'> 내용1 </div>
+			<div class='content'> 내용2 </div>
+			<div class='content'> 내용3 </div>
+			<div class='content'> 내용1 </div>
+			<div class='content'> 내용2 </div>
+			<div class='content'> 내용3 </div>
+			<div class='content'> 내용1 </div>
+			<div class='content'> 내용2 </div>
+			<div class='content'> 내용3 </div>
+		</div>
+		<h1>flex-direction</h1>
+		<div id='f1' class='flex-container'>
+			<div class='content'> 내용1 </div>
+			<div class='content'> 내용2 </div>
+			<div class='content'> 내용3 </div>
+		</div>
+		<div id='f2' class='flex-container'>
+			<div class='content'> 내용1 </div>
+			<div class='content'> 내용2 </div>
+			<div class='content'> 내용3 </div>
+		</div>
+		<div id='f3' class='flex-container justify-content'>
+			<div class='content'> 내용1 </div>
+			<div class='content'> 내용2 </div>
+			<div class='content'> 내용3 </div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>HTML/CSS BoxModel</title>
+	</head>
+	<body>	
+		<img src='img/coffee.jpg' width='350'
+			style='margin: 5px;'>			
+		<div style='border: 5px solid gray;
+					width: 324px;
+					padding: 8px;
+					margin: 5px;'>
+			그림의 너비는 350px입니다. <br>
+			그렇다면 이 div의 너비를 350px에 알맞게 <br>
+			설정해봅시다.
+		</div>
+		
+		<h2>이것이 박스모델이다!</h2>
+		<img src='img/ham2.jpg' width='590'>
+		<div style='background-color: lightblue;
+					color: #2c5694;
+					width: 500px;
+					height: 300px;
+					border: 15px solid #408af7;
+					padding: 10px;
+					margin: 20px;'>
+			width: 500px; <br>
+			height: 300px; <br>
+			border : 15px; <br>
+			padding: 10px; <br>
+			margin: 20px; <br>
+			가로 총 길이 : 500 + (15*2) + (10*2) + (20*2) <br>
+			세로 총 길이 : 300 + (15*2) + (10*2) + (20*2)
+		</div>
+		<br>
+		<img src='img/ham2.jpg' width='540'>
+		<div style='background-color: lightblue;
+					color: #2c5694;
+					width: 500px;
+					height: 300px;
+					border: 15px solid #408af7;
+					padding: 10px;
+					margin: 20px;
+					box-sizing: border-box;'>
+			width: 500px; <br>
+			height: 300px; <br>
+			border : 15px; <br>
+			padding: 10px; <br>
+			margin: 20px; <br>			
+			<hr>
+			box-sizing: border-box; <br>
+			가로 총 길이 : 500px + (margin*2) <br>
+			세로 총 길이 : 300px + (margin*2)
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+

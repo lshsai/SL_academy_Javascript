@@ -1,4 +1,4 @@
-package quiz;
+package answer;
 
 
 // School클래스를 완성해보세요
@@ -9,7 +9,7 @@ package quiz;
 //	- 전교 1등을 구하는 메서드
 //	- 반 순위를 구하는 메서드
 //	- 1반부터 8반을 생성하는 메서드 (테스트용)
-public class School {
+public class SchoolHome {
 
 	public static void main(String[] args) {
 		Student s1 = new Student(1,1);
