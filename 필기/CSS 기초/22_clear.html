@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<style>
+		.div1{
+			float: left;
+			width: 100px;
+			height: 50px;
+			margin: 10px;
+			border: solid green;
+		}
+		
+		.div2{
+			border: 1px solid tomato;
+			clear: both;
+		}
+		
+		.div3{
+			float: left;
+			width: 100px;
+			height: 50px;
+			margin: 10px;
+			border: solid green;
+		}
+		
+		
+		.div4{
+			border: 1px solid tomato;
+		}
+		
+		.div5{
+			border: solid green;
+			padding: 5px;
+		}
+		
+		.img{
+			float: right;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<h2>Clear 사용</h2>
+		<div class='div1'></div>
+		<div class='div2'> clear : left 사용한 div ; clear를 설정한 쪽의 float를 허용하지 않음</div>
+		
+		<h2>Clear 미사용</h2>
+		<div class='div3'></div>
+		<div class='div4'>clear : left 사용하지 않은 div ; clear의 float를 허용 </div>
+		<br>
+		<h2>자식 element에서 float 하는 경우</h2>
+		<!-- overflow 옵션 이용 -->
+		<div class='div5' style='margin-bottom: 10px; overflow: auto;'>
+			<img class='img1' src='img/img_girl.jpg' width='200'>
+		</div>
+		<!-- overflow 옵션 안주고 자식 element를 float 한 경우 -->
+		<div class='div5'>
+			<img class='img1' src='img/img_girl.jpg' width='200'>
+		</div>
+		
+		
+	</body>
+</html>

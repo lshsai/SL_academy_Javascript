@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Position 설정</title>
+		<style>
+		body{
+			height: 1000px;
+			width: 2000px;
+		}
+		div {
+			border: solid tomato;
+			font-size: 1.5em;
+		}		
+		
+		</style>
+	</head>
+	<body>
+		<!-- 포지션을 사용하지 않음 -->
+		<div style='position: static;'>position : static</div>
+		<!-- 원래 위치에서 상대적으로 어느곳에 위치하는가 -->
+		<div style='position: relative; left: 30px; top: 10px;'>position : relative</div>
+		<!-- 고정위치 사용 -->
+		<div style='position: fixed; right: 0px; bottom: 50%'>position : fixed</div>
+		<div style='position: fixed;  bottom: 0px; right: 0px;'>position : fixed</div>
+		<!-- 절대위치 사용 -->
+		<div style='position: absolute; bottom: 200px; right: 300px;'>position : absolute</div>
+		<!-- 화면을 벗어났을때 fixed처럼 동작, 항상 top-bottom or left-right를 0이라도 적어야 함 -->
+		<div style='position: sticky; top: 0px; left: 0px; width: 300px;'>position : sticky</div>
+		<div style='position: fixed; bottom: 0px; left: 0px; width: 200px; overflow:auto;'>
+			<img src='img/ham2.jpg' style='width:100%;'>
+			<p style='font-size: 0.8em; position: absolute; top: 0px;'>
+			구글 뉴스(Google News)는 구글이 제공하고 운영하는 무료 뉴스 애그리게이터이다. 자동 집계 알고리즘에 의해 수천 곳의 발행사로부터 최신의 정보를 선별한다. 현 총괄자는 리처드 징그러스이다.
+			2002년 9월 출범한 이 서비스는 2006년 1월까지 3년에 걸쳐 베타 테스트로 표기되었다.[1] 초기의 아이디어는 크리시나 브하라트(Krishna Bharat)에 의해 개발되었다.[2][3]
+			구글 뉴스는 2014년 12월 16일부로 스페인에서 구글 뉴스 서비스를 중단한다고 밝혔다. 이는 스페인 저작권의 개정으로 2015년 1월부터 뉴스 인용문에도 저작권료를 지불해야 하기 때문이다.[4]
+			이 서비스는 대한민국을 비롯한 수십개 국가에서 이용할 수 있다. 그러나 조선민주주의인민공화국 버전은 아직 공개되지 않았다.[출처 필요]
+			</p>
+		</div>
+	</body>
+</html>

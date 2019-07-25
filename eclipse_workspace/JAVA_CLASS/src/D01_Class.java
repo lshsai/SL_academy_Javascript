@@ -41,7 +41,7 @@ public class D01_Class {
 		s1.name = "홍길동";
 		s2.name = "임꺽정";
 		
-		s1.info();
+//		s1.info();
 		
 		Student[] students = new Student[100];
 		System.out.println(students);
@@ -63,6 +63,7 @@ class Student {
 	int eng;
 	int num;
 	int ban;
+
 	
 	// 생성자는 반환타입이 없다 (생성자를 호출했을 때, 반환하는 것은 인스턴스의 주소만 반환하므로)
 	// 클래스 이름과 같음 이름의 메서드 이다. 
@@ -71,6 +72,7 @@ class Student {
 		kor = 5;
 		eng = 1;
 		ban = 1;
+		
 	}
 	
 	void info() {
