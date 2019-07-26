@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<title>Align</title>
+		
+		<style>
+		.center {
+			border: solid green;
+			width: 50%;
+			padding : 10px;
+			
+			/* 글자 중심으로 */ 
+			text-align: center;
+			/* (Block 요소) 중심으로 */ 
+			margin: 10px auto;
+		}
+		
+		.center-img {
+			/* (Block 요소로 바꿔주고) 중심으로 */
+			display: block;
+			margin: auto;
+		}
+		
+		.center-pos {
+			border: solid tomato;
+			padding: 10px;
+			width: 300px;
+			
+			/* 왼쪽 오른쪽 정렬은 포지션이 편하다 */ 
+			/* left: 0px; right: 0px;*/
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%, 0)
+		}
+		.align-float {
+			position: relative;
+			border: solid tomato;
+			padding: 10px;
+			width: 300px;
+			
+			top: 100px;
+			float: right;
+		}
+		
+		.height-align {
+			border: solid tomato;
+			padding: 50px;
+			width: 300px;
+			box-sizing: border-box;
+		}
+		
+		.height-align2 {
+			position: relative;
+			border: solid tomato;
+			height: 300px;
+			width: 300px;
+			box-sizing: border-box;
+		}
+		
+		.height-pos {
+			position: absolute;
+			top: 50%;
+			transform: translate(0, -50%);
+			margin: 0px;
+			width: 100%;
+			text-align: center;
+		}
+		
+		
+		</style>
+	</head>
+	<body>
+		<div class='center'> 가운데 정렬</div>
+		<img class='center-img' src='img/img_chania.jpg' width = '50%'>
+		<p class='center'> img태그는 default값이 인라인으로, margin 적용 안됨 >> display block 필요</p>
+		<div class='center-pos'> position을 이용한 가운데 정렬</div>
+		<div class='align-float'> float을 이용한 정렬(left/ right)</div>
+		<br><br><br><br><br><br><br><br>
+		<div class='height-align'> 세로정렬 1. height없이 padding으로 맞춘다.</div>
+		<div class='height-align2'><div class='height-pos'>세로정렬 2. position 사용</div></div>
+		
+	</body>
+</html>

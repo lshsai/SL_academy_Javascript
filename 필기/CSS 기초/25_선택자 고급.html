@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<style>
+		/* 'space' 표시 : 모든 자식에게 적용 */
+		/* '>' 표시 :  바로 밑의 자식에게만 적용 */
+		div > p {
+			background-color: yellow;
+		}
+		
+		/* '~' 표시 : div기준 형제인 요소들을 선택 */
+		div ~ p {
+			background-color: blue;
+			color: white;
+		}
+		
+		/* '+' 표시 : 형제 중에서 바로 다음에 나오는 요소를 선택 */
+		div + p {
+			background-color: black;
+			color: white;
+		}
+		
+		a {
+			font-size: 1.5em;
+		}
+		a.highlight:hover {
+			background-color: hotpink;
+			text-decoration: none;
+		}
+		
+		a.hidden {
+			display: none;
+		}
+		
+		p.hint:hover > a {
+			display: block;
+			color: white;
+		}
+		</style>
+	</head>
+	<body>
+		<p>p tag 0</p>
+		<div>
+			<p>p tag 1</p>
+			<p>p tag 2</p>
+			<span><p>p tag 3</p></span>
+		</div>
+		<p>p tag 4</p>
+		<span><p>p tag 5</p></span>
+		<p>p tag 6</p>
+		<p>p tag 7</p>
+		
+		<h2>a: link, a:visited들의 정체 - Pseudo-class</h2>
+		<a class='highlight' href='http://naver.com'> 네이버</a>
+		<br>
+		<p class='hint'>여기에 마우스를 올려보세요!
+		<a class='hidden' href='http://naver.com'> 네이버</a>
+		</p>
+		<hr>
+		
+	</body>
+</html>
