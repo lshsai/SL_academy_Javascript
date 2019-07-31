@@ -29,5 +29,6 @@ public class E07_Calender {
 		cal.set(Calendar.MONTH, 6);
 		cal.set(Calendar.DATE, 7);
 		System.out.println(cal.get(Calendar.DAY_OF_WEEK));
+		System.out.println(Calendar.TUESDAY);
 	}
 }

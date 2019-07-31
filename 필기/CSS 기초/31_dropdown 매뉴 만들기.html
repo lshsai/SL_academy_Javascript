@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <style>
+	  .dropdown-trigger {
+		position: relative;
+	  }
+	  .dropdown-menu {
+		display: none;
+		position: absolute;
+		background-color: lightgray;
+		padding: 0px 16px;
+
+		top: 25px;
+		left: 100px;
+	  }
+	  .dropdown-trigger:hover > .dropdown-menu {
+		display: block;
+		z-index: 1;
+	  }
+
+	  .dropdown2 {
+		position: relative;
+		top: 20px;
+	  }
+	  .dropdown-link {
+		display: none;
+		position: absolute;
+		z-index: 1;
+		top: 52px;
+	  }
+	  .dropdown-link > a {
+		display: block;
+		background-color: lightgray;
+		padding: 0px 25px;
+		font-size: 1.5em;
+		text-decoration: none;
+		color: black;
+	  }
+	  .dropbutton {
+		background-color: aqua;
+		color: white;
+		text-decoration: none;
+		padding: 20px;
+		font-size: 1.5em;
+	  }
+	  .dropdown2:hover .dropdown-link {
+		display: block;
+	  }
+	  .dropdown-link a:hover {
+		background-color: gray;
+		color: white;
+	  }
+	  .dropdown3 {
+		position: absolute;
+	  }
+
+	  .drop-content {
+		display: none;
+	  }
+
+	  .drop-content {
+		display: none;
+		position: absolute;
+		box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+	  }
+
+	  .dropdown3:hover .drop-content {
+		display: block;
+	  }
+	  .desc {
+		padding: 15px;
+		text-align: center;
+		background-color: lightblue;
+	  }
+    </style>
+  </head>
+  <body>
+    <h2>Dropdown이란?</h2>
+    <div class="dropdown-trigger">
+      <span>마우스를 올려보세요!</span>
+      <div class="dropdown-menu">
+        <p>Menu1</p>
+        <p>Menu2</p>
+      </div>
+    </div>
+    <hr />
+    <div class="dropdown2">
+      <a class="dropbutton" href="">Mouse over</a>
+      <div class="dropdown-link">
+        <a href="">Link1</a>
+        <a href="">Link2</a>
+      </div>
+    </div>
+    <br /><br />
+    <hr />
+    <div class="dropdown3">
+      <img src="img/pic_trulli.jpg" width="100" />
+      <div class="drop-content">
+        <img src="img/pic_trulli.jpg" width="300" />
+        <div class="desc">dsdsdsd</div>
+      </div>
+    </div>
+  </body>
+</html>

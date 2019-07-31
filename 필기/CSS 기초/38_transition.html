@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        color: white;
+        border: solid black;
+        font-weight: bold;
+        /* transition: width 0.3s, height 3s; */
+        transition: 0.3s;
+      }
+      div#basic:hover {
+        width: 300px;
+        height: 300px;
+      }
+      div.trigger:hover > div.timing {
+        width: 300px;
+        transition: 1.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>basic</h2>
+    <div id="basic">Test Basic Transition</div>
+    <h2>timing_fuction</h2>
+    <div
+      class="trigger"
+      style="width: auto; height:auto; background-color: white;"
+    >
+      <div class="timing" style="transition-timing-function: linear;">
+        linear
+      </div>
+      <div class="timing" style="transition-timing-function: ease;">ease</div>
+      <div class="timing" style="transition-timing-function: ease-in;">
+        ease-in
+      </div>
+      <div class="timing" style="transition-timing-function: ease-out;">
+        ease-out
+      </div>
+      <div class="timing" style="transition-timing-function: ease-in-out;">
+        ease-in-out
+      </div>
+    </div>
+  </body>
+</html>

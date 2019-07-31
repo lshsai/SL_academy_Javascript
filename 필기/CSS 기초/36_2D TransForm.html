@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      div {
+        width: 300px;
+        height: 100px;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        border: solid;
+        padding: 10px;
+      }
+      div#rotate {
+        transform: rotate(20deg);
+      }
+
+      div#translate {
+        transform: translate(50%, -200%);
+      }
+
+      div#scale {
+        transform: scale(0.5, 0.5);
+      }
+      div#skew {
+        transform: skew(20deg, 20deg);
+      }
+      div#matrix {
+        transform: matrix(1, -0.3, 0, 1, 0, 0);
+      }
+      /*hover */
+    </style>
+  </head>
+  <body>
+    <h2>rotate() 메서드</h2>
+    <div class="test_div">test div</div>
+    <div id="rotate">test div</div>
+
+    <h2>translate() 메서드</h2>
+    <div id="translate">test div</div>
+
+    <h2>scale() 메서드</h2>
+    <div id="scale">test div</div>
+
+    <h2>그외 skew(), matrix() 메서드</h2>
+    <div id="skew">test div</div>
+    <div id="matrix">test div</div>
+  </body>
+</html>
