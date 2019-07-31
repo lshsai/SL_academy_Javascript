@@ -22,11 +22,13 @@ public class HashMapQuiz2 {
 		addPhoneNo("직장", "임창정", "010-467-4588");
 		addPhoneNo("직장", "김두한", "010-467-1234");
 		addPhoneNo("직장", "구마적", "010-467-4663");
+		addPhoneNo("직장", "신마적", "010-467-4653");
 
 		printList();
-		
-		// findName("123");
-		
+
+		findName("123");
+		System.out.println("==");
+		findTel("마");
 
 	}
 
@@ -57,10 +59,11 @@ public class HashMapQuiz2 {
 			Set<String> tels = group.keySet();
 			for (String tel : tels) {
 				String name = group.get(tel);
-				System.out.println(name + "\t" + tels);
+				System.out.println(name + "\t" + tel);
 			}
 
 		}
+		System.out.println("===========================");
 	}
 
 	// 전화번호의 일부입력, 입력부분까지 일치하는 사람의 목록을 출력하는 메서드
@@ -84,6 +87,24 @@ public class HashMapQuiz2 {
 
 	// 이름을 입력하면, 전화번호를 출력해주는 메서드 (동명이인있는 경우, 모두 출력)
 	static void findTel(String name) {
+		Set<String> groupNames = phoneBook.keySet();
 
+		for (String groupName : groupNames) {
+			HashMap<String, String> group = phoneBook.get(groupName);
+
+			Set<String> tels = group.keySet();
+
+			for (String value : tels) {
+				if (group.get(value).contains(name)) {
+					String name2 = group.get(value);
+					System.out.println(groupName + "\t" + name2 + "\t" + value);
+				}
+
+			}
+
+		}
 	}
 }
+
+// Collection 자식은 List, Set
+// HashTable 자식은 HashMap

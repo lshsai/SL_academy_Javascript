@@ -12,7 +12,7 @@
         border: solid black;
         font-weight: bold;
         /* transition: width 0.3s, height 3s; */
-        transition: 0.3s;
+        transition: 0.7s;
       }
       div#basic:hover {
         width: 300px;
@@ -21,6 +21,26 @@
       div.trigger:hover > div.timing {
         width: 300px;
         transition: 1.5s;
+      }
+
+      div#delay-trigger:hover > div.delay {
+        width: 300px;
+        transition: 2s;
+      }
+      .delay:nth-child(2) {
+        transition-delay: 1s;
+      }
+      .delay:nth-child(3) {
+        transition-delay: 2s;
+      }
+      .delay:nth-child(4) {
+        transition-delay: 3s;
+      }
+      #transform-trigger:hover > div:first-child {
+        width: 300px;
+        height: 150px;
+        transition: width 1s, height 3s, tranform 5s linear 5s;
+        transform: rotateY(720deg);
       }
     </style>
   </head>
@@ -45,6 +65,23 @@
       <div class="timing" style="transition-timing-function: ease-in-out;">
         ease-in-out
       </div>
+    </div>
+    <h2>transition-delay</h2>
+    <div
+      id="delay-trigger"
+      style="width: auto; height: auto; background: white; border: none;"
+    >
+      <div class="delay">delay test</div>
+      <div class="delay">delay 1s</div>
+      <div class="delay">delay 2s</div>
+      <div class="delay">delay 3s</div>
+    </div>
+    <h2>rotation + transform</h2>
+    <div
+      id="transform-trigger"
+      style="width: auto; height: auto; background: white; border: none;"
+    >
+      <div class="trans">rorate</div>
     </div>
   </body>
 </html>

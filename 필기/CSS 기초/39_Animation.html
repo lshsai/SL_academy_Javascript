@@ -1,0 +1,69 @@
+<html>
+  <head></head>
+  <style>
+    .textbox {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      color: white;
+      border: solid black;
+
+      animation-name: example2;
+      animation-duration: 5s;
+      animation-delay: -2s;
+      animation-iteration-count: infinite;
+      animation-direction: reverse;
+    }
+
+    .textbox:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes example {
+      from {
+        background-color: red;
+      }
+      to {
+        background-color: blue;
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    @keyframes example2 {
+      0% {
+        background-color: red;
+        position: relative;
+        left: 0px;
+        top: 0px;
+      }
+      25% {
+        background-color: yellow;
+        position: relative;
+        left: 100px;
+        top: 0px;
+      }
+      50% {
+        background-color: green;
+        position: relative;
+        left: 100px;
+        top: 100px;
+      }
+      75% {
+        background-color: yellow;
+        position: relative;
+        left: 0px;
+        top: 100px;
+      }
+      100% {
+        background-color: aqua;
+        position: relative;
+        left: 0px;
+        top: 0px;
+      }
+    }
+  </style>
+  <body>
+    <div class="textbox"></div>
+  </body>
+</html>
