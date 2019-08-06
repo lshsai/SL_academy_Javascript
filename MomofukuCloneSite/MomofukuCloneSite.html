@@ -1,0 +1,315 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.10.1/css/all.css"
+    />
+
+    <title>MomofukuCloneSite</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .box-nav {
+        position: fixed;
+        width: 11.8%;
+        height: 100%;
+        box-shadow: 2px 2px 2px 2px #999;
+        
+      }
+      .logo {
+        
+        height: 35%;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+      }
+      .middle {       
+        height: 30%;
+        text-align: center;
+      }
+      .resto{
+        margin-top: 10px;
+        margin-bottom: 10px;
+       
+      }
+      .company{
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+      }
+      .ventures{
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+      }
+
+      .social {
+        height: 30%;
+        text-align: center;
+      }
+
+      .hg-box {
+        height: 80%;
+      }
+
+      .box-content {
+        position: absolute;
+        height: 100%;
+        width: 89%;
+        margin-left: 210px;
+      }
+
+      .textbox{
+        position: absolute;
+        top: 400px;
+        left: 80px;
+      }
+      p{
+        color: white;
+        font-size: 3em;
+        text-align: left;
+        text-shadow: 2px 2px 2px gray;
+      }
+      .explain{
+        font-size: 0.8em;
+        text-align: left;
+      }
+
+      .content-top-img{   
+        width: 98%;
+        height: 65%;
+        text-align: center;
+        margin-left: 16px;
+        opacity: 0.9;
+        transition: transform 0.3s;
+      }
+      .content-top-img:hover{
+        transform: scale(0.97, 0.97);
+        filter: brightness(50%);
+      }
+
+      .con-main-firstbox{
+        text-align: center;
+        width: 100%;
+        height: 350px;     
+        margin-top: 2px;
+      }
+      .firstbox{
+        text-align: left;
+        position: relative;
+        width: 49%;
+        height: 99%;
+        display: inline-block;
+      }
+      .textbox1{
+        position: absolute;
+        top: 160px;
+        left: 50px;
+      }
+      #tb1{
+        font-size: 2em;
+      }
+
+      .firstbox:nth-child(1){
+        background-image: url("img/pic1.jpg");
+        background-size: cover;
+        transition: transform 0.3s;
+      }
+      .firstbox:nth-child(1):hover{
+        transform: scale(0.97, 0.97);
+        filter: brightness(50%);
+      }
+      .firstbox:nth-child(2){
+        background-image: url("img/pic2.jpg");
+        background-size: cover;
+        transition: transform 0.3s;
+      }
+      .firstbox:nth-child(2):hover{
+        transform: scale(0.97, 0.97);
+        filter: brightness(50%);
+      }
+
+      .con-main-secondtbox{
+        text-align: center;
+        width: 100%;
+        height: 350px;   
+      }
+      .secondtbox{
+        text-align: left;
+        position: relative;
+        width: 49%;
+        height: 99%;
+        display: inline-block;
+      }
+      .textbox2{
+        position: absolute;
+        top: 160px;
+        left: 50px;
+      }
+      #tb2{
+        font-size: 2em;
+      }
+
+
+      .secondtbox:nth-child(1){
+        background-image: url("img/pic3.jpg");
+        background-size: cover;
+        transition: transform 0.3s;
+      }
+      .secondtbox:nth-child(1):hover{
+        transform: scale(0.97, 0.97);
+        filter: brightness(50%);
+      }
+      .secondtbox:nth-child(2){
+        background-image: url("img/pic4.jpg");
+        background-size: cover;
+        transition: transform 0.3s;
+      }
+      .secondtbox:nth-child(2):hover{
+        transform: scale(0.97, 0.97);
+        filter: brightness(50%);
+      }
+      .con-main-thirdbox{
+        text-align: center;
+        width: 100%;
+        height: 350px;   
+      }
+      .thirdbox{
+        text-align: left;
+        position: relative;
+        width: 49%;
+        height: 99%;
+        display: inline-block;
+      }
+      .textbox3{
+        position: absolute;
+        top: 160px;
+        left: 50px;
+      }
+      #tb3{
+        font-size: 2em;
+      }
+      .thirdbox:nth-child(1){
+        background-image: url("img/pic5.jpg");
+        background-size: cover;
+        transition: transform 0.3s;
+      }
+      .thirdbox:nth-child(1):hover{
+        transform: scale(0.97, 0.97);
+        filter: brightness(50%);
+      }
+      .thirdbox:nth-child(2){
+        background-image: url("img/pic6.jpg");
+        background-size: cover;
+        transition: transform 0.3s;
+      }
+      .thirdbox:nth-child(2):hover{
+        transform: scale(0.97, 0.97);
+        filter: brightness(50%);
+      }
+      i{
+        
+        text-shadow: 2px 2px 2px gray; 
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="box-nav">
+      <div class="logo">
+        <img style="width: 80%" src='img/momo-group.png'/> </div>
+      <div class="middle">
+        <hr />
+        <div class="resto">
+          <div><i class="fas fa-utensils fa-3x"></i></div>
+          <span>Our restaurants</span>
+          <hr />
+        </div>
+        <div class="company">
+          <div><i class="fas fa-water fa-3x"></i></div>
+          <span>Our Company</span>
+        </div>
+        <hr />
+        <div class="ventures">
+          <div><i class="fab fa-dropbox fa-3x"></i></i></div>
+          <span>Other Ventures</span>
+        </div>
+        <hr />
+      </div>
+      <div class="social">
+        <div class="hg-box"></div>
+        <div class="social-icon">
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fab fa-facebook-square fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fab fa-tumblr fa-2x"></i>
+        </div>
+      </div>
+    </div>
+    <div class="box-content">
+      <div class="content-top">
+        <img class="content-top-img" src="img/bar.jpg" />
+        <div class="textbox">
+            <p>BAR WAYO</p>
+            <i class="fas fa-grip-lines fa-3x" style="color: white"></i>
+            <p class="explain">Our new bar is open at Pier 17in South Street Seaport.</p>
+        </div>
+      </div>
+      <div class="content-main">
+        <div class="con-main-firstbox">
+          <div class="firstbox">   
+              <div class="textbox1">
+                  <p id="tb1">UPCOMING PROJECTS</p>
+                  <i class="fas fa-grip-lines fa-3x" style="color: white"></i>
+                  <p class="explain">Coming soon from Momofuku</p>
+              </div>        
+          </div>  
+          <div class="firstbox">          
+              <div class="textbox1">
+                  <p id="tb1">STAY IN TOUCH</p>
+                  <i class="fas fa-grip-lines fa-3x" style="color: white"></i>
+                  <p class="explain">Sign up for our newsletter to get updates on these and other up coming projects.</p>
+              </div>        
+          </div>
+        </div>
+        <div class="con-main-secondtbox">
+          <div class="secondtbox">           
+              <div class="textbox2">
+                  <p id="tb2">PRIVATE DINING & CATERING</p>
+                  <i class="fas fa-grip-lines fa-3x" style="color: white"></i>
+                  <p class="explain">Learn more about options in NYC</p>
+              </div>        
+          </div>  
+          <div class="secondtbox">          
+              <div class="textbox2">
+                  <p id="tb2">COME WORK WITH US!</p>
+                  <i class="fas fa-grip-lines fa-3x" style="color: white"></i>
+                  <p class="explain">Apply now for positoins in LA, NY, DC</p>
+              </div>     
+          </div>
+        </div>
+        <div class="con-main-thirdbox">
+            <div class="thirdbox">           
+                <div class="textbox3">
+                    <p id="tb3">FUKU</p>
+                    <i class="fas fa-grip-lines fa-3x" style="color: white"></i>
+                    <p class="explain">Fuku is a fried chicken spot from Momofuku the setves fried chicken</p>
+                </div>     
+              </div>  
+              <div class="thirdbox">          
+                  <div class="textbox3">
+                      <p id="tb3">SSAM SAUCE</p>
+                      <i class="fas fa-grip-lines fa-3x" style="color: white"></i>
+                      <p class="explain">Ssam Sauceis available.</p>
+                  </div>     
+              </div>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
