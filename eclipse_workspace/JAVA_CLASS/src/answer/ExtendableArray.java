@@ -3,6 +3,8 @@ package answer;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import javax.swing.JButton;
+
 public class ExtendableArray {
 	static int[] arr = new int[3];
 	static int[] tmp;
@@ -84,5 +86,11 @@ public class ExtendableArray {
 		for (int tt : tmp) {
 			System.out.println(tt + " ");
 		}
+	}
+}
+
+class CreateBtn extends JButton{
+	public CreateBtn(String name) {
+	
 	}
 }

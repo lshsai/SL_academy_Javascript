@@ -24,6 +24,8 @@ public class ArrayListQuiz {
 		list2.add(6);
 		
 		System.out.println("list1 : " + list1);
+		System.out.println(list1.toString());
+		
 		System.out.println("list2 : " + list2);
 		
 		ArrayList kyo = new ArrayList(); 
