@@ -1,0 +1,19 @@
+<html>
+  <head> </head>
+  <!-- 이벤트처리 어트리뷰트 사용-->
+  <body onclick="changeDemoText2('안녕하세요')">
+    <h2 onclick='changeDemoText("HI")'>자바스크립트의 사용법들</h2>
+    <p id="demo">데모 p테크</p>
+
+    <!-- 스크립트 태그-->
+    <script>
+      function changeDemoText(a) {
+        document.getElementById("demo").innerHTML = a;
+      }
+    </script>
+
+    <!-- 외부 자바스크립트 사용-->
+    <script src="test.js"></script>
+    <script src="https:url"></script>
+  </body>
+</html>

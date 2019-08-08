@@ -1,0 +1,75 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      document.write("<style>");
+      document.write("body {");
+      document.write("font-size:50px;");
+      document.write("}");
+      document.write("</style>");
+      var x = 5,
+        y = 2,
+        z = x + y;
+      document.write(z + "<br>");
+
+      z = x - y;
+      document.write(z + "<br>");
+      z = x * y;
+      document.write(z + "<br>");
+      z = x ** y;
+      document.write(z + "<br>");
+      z = x / y;
+      document.write(z + "<br>");
+      z = x % y;
+      document.write(z + "<br>");
+      document.write(++z + "<br>");
+      document.write(z++ + "<br>");
+      document.write(z-- + "<br>");
+      document.write(z + "<br>");
+      document.write("<hr>");
+
+      var a = 5,
+        b = 10;
+      document.write(a > b + "<br>");
+      console.log(a > b);
+
+      // 0 : false
+      // 0이외의 모든 것 true
+      if (0) {
+        window.alert("hi");
+      }
+
+      var a = 5,
+        b = "5";
+      console.log(a == b); // 값만 비교 5 == '5' : true
+      console.log(a === b); // 값, 타입까지 비교 5===5'5' : false
+      console.log(a != b); // 값이 일치할 떄 false
+      console.log(a !== b); // 값, 타입이 일치할 떄 false
+
+      console.log(a === b ? "값, 타입 일치" : "값, 타입 일치는 아닙니다.");
+      console.log(
+        a === b
+          ? "값, 타입 일치"
+          : a == b
+          ? "값은 일치"
+          : "값, 타입 모두 불일치"
+      );
+      // &&, ||, !, >=, <=, <, > 모두 java와 같음
+
+      console.log(typeof a);
+      console.log(typeof b);
+      console.log(typeof 3.14);
+      console.log(typeof "A");
+      console.log(typeof false);
+      console.log(typeof true);
+      console.log(typeof function() {});
+      var c = function() {
+        if (0) window.alert("hello");
+        return 10;
+      };
+      console.log(typeof c); // 변수 실행 x, 함수를 변수에 담을 수 있다.
+      console.log(typeof c()); // 변수 실행, 함수를 변수에 담을 수 있다.
+      console.log(typeof null);
+    </script>
+  </body>
+</html>
