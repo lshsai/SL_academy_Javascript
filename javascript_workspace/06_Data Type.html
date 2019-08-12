@@ -1,0 +1,38 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      var length = 16;
+      var lastName = "Poter";
+      var x = {
+        firstName: "길동",
+        lastName_2: "홍",
+        age: 50
+      };
+      var cars = ["BMW", "HUNDAI", "KIA", "VOLVO"];
+      console.log(typeof length); // number
+      console.log(typeof lastName); // string
+      console.log(typeof x); // json객체
+      console.log(typeof cars); // js 배열 --> object 타입
+      console.log("===================");
+      console.log(x);
+      console.log(x.age);
+      console.log(x.firstName);
+      console.log(x.lastName_2);
+      console.log(cars);
+      console.log(cars[0]);
+
+      console.log("===================");
+      var age; //undefined, undefined type
+      console.log(typeof age);
+
+      cars_1 = null; // null, object
+      console.log(typeof cars_1);
+      console.log(null == undefined); // true
+      console.log(null === undefined); // false
+
+      // number, string, undefined, boolean, object, fuction...
+      // array타입은 존재하지 않는다.(js배열은 object이다.)
+    </script>
+  </body>
+</html>

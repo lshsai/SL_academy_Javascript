@@ -1,0 +1,22 @@
+<html>
+  <head> </head>
+  <body>
+    <button onclick="getTime()">
+      현재 시각
+    </button>
+    <button onmouseover="getTime()">마우스를 올려보세요</button>
+    <button onmouseout="getTime()" style="padding:50px;">
+      마우스 아웃 시 이벤트 발생
+    </button>
+    <p id="time"></p>
+    <script>
+      var getTime = function() {
+        var d = new Date();
+
+        // var msg = d.getFullYear() + "-" + d.getMonth() + "-" + d.getDate();
+        document.getElementById("time").innerHTML = d;
+        console.dir(d);
+      };
+    </script>
+  </body>
+</html>

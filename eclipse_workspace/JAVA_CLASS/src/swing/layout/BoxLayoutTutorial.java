@@ -24,9 +24,9 @@ public class BoxLayoutTutorial {
 
 	public BoxLayoutTutorial() {
 		// X.AXIS, Y.AXIS, LINE_AXIS, PAGE_AXIS
-		//panel.setLayout(new BoxLayout(panel, BoxLayout.LINE_AXIS));
+		panel.setLayout(new BoxLayout(panel, BoxLayout.LINE_AXIS));
 		//panel.setLayout(new BoxLayout(panel, BoxLayout.X_AXIS));
-		panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
+		// panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
 		// panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
 		panel.add(btnFirst);
 		// panel.add(Box.createHorizontalGlue());

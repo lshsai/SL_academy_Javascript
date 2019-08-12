@@ -1,0 +1,24 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      // 배열의 다른 형태(자바의 객체와는 좀 다르다)
+      // 자바의 객체중에서도 데이터 전달용 객체(DTO)와 유사하다(필드만 있는 클래스)
+      var person = {
+        firstName: "길동",
+        lastName: "홍",
+        age: 50,
+        hairColor: "검정",
+        fullName: function() {
+          return this.lastName + this.firstName;
+          // this는 함수의 소유자(person)
+        }
+      };
+
+      // json 접근
+      console.log(person.age);
+      console.log(person["age"]);
+      console.log(person.fullName());
+    </script>
+  </body>
+</html>

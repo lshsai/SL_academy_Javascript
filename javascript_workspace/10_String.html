@@ -1,0 +1,112 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      var car1 = "내 차는 'bmw' 입니다";
+      var car2 = '내차는 "volvo"입니다.'; // 같이 쓰려면 \" 이용
+      var car3 = '내차는 "volvo"입니다.';
+
+      console.log(car1);
+      console.log(car2);
+      console.log(car2.length);
+
+      var x = "john";
+      var y = new String("john");
+      var z = new String("john");
+
+      console.log(x == y); // 값은 같음 true
+      console.log(x === y); // false : x는 String, y는 object
+
+      console.log(y == z); // 오브젝트 비교는 항상 false
+      console.log(y === z); // false
+
+      console.log(y.toString == z.toString); // true
+      console.log(y.toString === z.toString); // true
+
+      var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      var len = str.length;
+      var pos = str.indexOf("D");
+      pos = str.indexOf("D", 4);
+      var pos_last = str.lastIndexOf("D"); // str[길이-1]부터 거꾸로
+      var search = str.search("K"); // 어디서 부터 시작할지 결정할 수 없다
+
+      console.log("len of 'str'" + len);
+      console.log("pos of 'd' " + pos);
+      console.log("last pos of 'd'" + pos_last);
+      console.log("search of k " + search);
+
+      // ###########슬라이스
+      var fruits = "apple, banana, kiwi";
+      var banana = fruits.slice(7, 13);
+      var slice2 = fruits.slice(7);
+      var negativceslice = fruits.slice(-4);
+
+      console.log("fruits slice(7, 13)" + banana);
+      console.log(slice2);
+      console.log(negativceslice);
+      // ###########substr
+      var kiwi = fruits.substr(15, 4); // 15번쨰부터 4개
+      banana = fruits.substr(7, 6); // 7번쨰부터 4개
+      console.log(kiwi);
+      console.log(banana);
+
+      // ###########replace()
+      var email = "anaosdni@naver.com : 나의 Naver주소"; // 처음 만난 naver만 바꿈
+      var replaced = email.replace("naver", "gmail");
+      console.log(replaced);
+
+      // ###########정규표현식 : 문자열의 패턴을 규칙대로 표현하여, 비교를 편하게 하는데 도움을 준다.
+      var replaced = email.replace(/naver/g, "gmail");
+      replaced = email.replace(/NAVER/gi, "gmail");
+      console.log(replaced);
+
+      // ###########toUpperCase(), toLowerCase()
+
+      // ###########concat(); + 처럼 문자열 붙이기로 사용
+      var t1 = "fd";
+      var t2 = "asd";
+      var t3 = ",";
+
+      var msg = t1.concat(t3, t2, t3, t1);
+      console.log(msg);
+
+      // 모든 문자열 매서드들은 새로운 문자열 객체를 생성해서 리턴한다.
+      // 원래 문자열을 수정하지 않는다.
+
+      // ###########trim()
+
+      var id = "         sad         ";
+      console.log(id);
+      console.log(id.trim());
+      // 정규표현식을 이용한 - trim : /(^\s*)|(\s*$)/g
+      console.log(id.replace(/(^\s*)|(\s*$)/g, ""));
+
+      // js 프로토타입(직접 트림구현)
+      if (!String.prototype.trim) {
+        // ie8버전 이하라면
+        String.prototype.trim = function() {
+          return this.replace(/(^\s*)|(\s*$)/g, "");
+        };
+
+        var old_ver = "ddddd   12";
+
+        console.log("old" + old_ver.trim());
+      }
+
+      // ##############charAt()
+
+      var str2 = "asdasd";
+      console.log(str2.charAt(0));
+      console.log(str2.charCodeAt(0)); // char의 실제 ascii(혹은 유니코드)를 리턴
+      // 아스키 (0-255)
+      // 유니코드 (256-65535)
+
+      var txt1 = "a, b, c,d,e";
+      var splited = txt1.split(",");
+
+      for (var i = 0; i < splited.length; i++) {
+        document.write(splited[i].trim() + "<br>");
+      }
+    </script>
+  </body>
+</html>
