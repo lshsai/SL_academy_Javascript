@@ -1,4 +1,4 @@
-package answer.chatGui;
+package answer.serverGui;
 
 import java.awt.BorderLayout;
 import java.awt.Container;
@@ -16,65 +16,39 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-
-
-
-public class ClientMainFrame extends JFrame {
-	Socket cs;
+public class ServerMainFrame extends JFrame {
+	
 	Container con;
-	PrintWriter writer;
-	
-	JPanel centerPanel = new JPanel();
-	
-	JPanel topPanel = new JPanel();
-	JButton reqBtn = new JButton("접속요청");
-	JTextField inputIp = new JTextField(10);
-	JTextField inputPort = new JTextField(5);
-	JTextField inputId = new JTextField(5);
-	JLabel labelIp = new JLabel();
-	JLabel labelPort = new JLabel();
-	JLabel labelId = new JLabel();
-	
-	static String ipNum ="";
-	static int portNum=0;
-	static String idString="";
-	
-	JTextArea chatting = new JTextArea(10,30);
-	JPanel southPanel = new JPanel();
-	JTextField inputChat = new JTextField(30);
-
-	
-	public ClientMainFrame() {
-	
-		labelIp.setText("IP");
-		labelPort.setText("PORT");
-		labelId.setText("ID");
 		
-
+	JPanel centerPanel = new JPanel();	
+	JPanel topPanel = new JPanel();
+	JPanel southPanel = new JPanel();
+	
+	JButton reqBtn = new JButton("서버시작하기");
+	JTextField inputPort = new JTextField(5);
+	JLabel labelPort = new JLabel();
+	static int portNum=0;
+	
+	///JTextArea chatting = new JTextArea(10,30);
+	
+	public ServerMainFrame() {
+		labelPort.setText("가동할 포트번호 입력");
 		
 		setLayout(new BorderLayout());
 		con = getContentPane();
 		
 		con.add(topPanel, "North");
-		topPanel.add(labelIp);
-		topPanel.add(inputIp);
 		topPanel.add(labelPort);
 		topPanel.add(inputPort);
-		topPanel.add(labelId);
-		topPanel.add(inputId);
 		topPanel.add(reqBtn);
 		reqBtn.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				ipNum = inputIp.getText();
 				portNum = Integer.parseInt(inputPort.getText());
-				idString = inputId.getText();
 				
-				makeSc(ipNum, portNum);
-				
+				// makeSc(portNum);
 			}
 		});
-		
 		
 		con.add(centerPanel, "Center");
 		centerPanel.add(chatting);
@@ -111,7 +85,7 @@ public class ClientMainFrame extends JFrame {
 	public void makeSc(String add, int port) {
 		try {
 			cs = new Socket(add, port);
-			ClientMainFrame mainFrame = new ClientMainFrame();
+			ServerMainFrame mainFrame = new ServerMainFrame();
 			new ClientReceiveThread(cs, mainFrame).start();
 		} catch (UnknownHostException e) {
 			// TODO Auto-generated catch block
